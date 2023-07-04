@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.ph30384</groupId>
-    <artifactId>DuAn1_Maven</artifactId>
+    <artifactId>DuAn1_FPoly_Maven_PRO1041.02</artifactId>
     <version>Prototype</version>
     <packaging>jar</packaging>
     <properties>
@@ -19,5 +19,5 @@
             <version>12.3.1.jre11-preview</version>
         </dependency>
     </dependencies>
-    
+    <name>DuAn1_FPoly_Maven_PRO1041.02</name>
 </project>
