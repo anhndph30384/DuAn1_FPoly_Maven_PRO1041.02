@@ -14,6 +14,7 @@ public class MauSacDomain {
 
     private String id;
     private String ma;
+    private String ten;
     private Date NgayTao;
     private Date NgaySua;
     private int TrangThai;
@@ -21,16 +22,18 @@ public class MauSacDomain {
     public MauSacDomain() {
     }
 
-    public MauSacDomain(String id, String ma, Date NgayTao, Date NgaySua, int TrangThai) {
+    public MauSacDomain(String id, String ma, String ten, Date NgayTao, Date NgaySua, int TrangThai) {
         this.id = id;
         this.ma = ma;
+        this.ten = ten;
         this.NgayTao = NgayTao;
         this.NgaySua = NgaySua;
         this.TrangThai = TrangThai;
     }
 
-    public MauSacDomain(String ma, Date NgayTao, Date NgaySua, int TrangThai) {
+    public MauSacDomain(String ma, String ten, Date NgayTao, Date NgaySua, int TrangThai) {
         this.ma = ma;
+        this.ten = ten;
         this.NgayTao = NgayTao;
         this.NgaySua = NgaySua;
         this.TrangThai = TrangThai;
@@ -50,6 +53,14 @@ public class MauSacDomain {
 
     public void setMa(String ma) {
         this.ma = ma;
+    }
+
+    public String getTen() {
+        return ten;
+    }
+
+    public void setTen(String ten) {
+        this.ten = ten;
     }
 
     public Date getNgayTao() {
@@ -78,8 +89,7 @@ public class MauSacDomain {
 
     @Override
     public String toString() {
-        return "IMEIDomain{" + "id=" + id + ", ma=" + ma + ", NgayTao=" + NgayTao + ", NgaySua=" + NgaySua + ", TrangThai=" + TrangThai + '}';
+        return "MauSacDoMain{" + "id=" + id + ", ma=" + ma + ", ten=" + ten + ", NgayTao=" + NgayTao + ", NgaySua=" + NgaySua + ", TrangThai=" + TrangThai + '}';
     }
 
-   
 }

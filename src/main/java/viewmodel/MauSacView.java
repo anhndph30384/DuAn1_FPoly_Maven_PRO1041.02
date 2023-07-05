@@ -4,7 +4,6 @@
  */
 package viewmodel;
 
-import domainmodel.*;
 import java.sql.Date;
 
 /**
@@ -15,23 +14,23 @@ public class MauSacView {
 
     private String id;
     private String ma;
+    private String ten;
     private Date NgayTao;
     private Date NgaySua;
     private int TrangThai;
 
-    public MauSacView() {
-    }
-
-    public MauSacView(String id, String ma, Date NgayTao, Date NgaySua, int TrangThai) {
+    public MauSacView(String id, String ma, String ten, Date NgayTao, Date NgaySua, int TrangThai) {
         this.id = id;
         this.ma = ma;
+        this.ten = ten;
         this.NgayTao = NgayTao;
         this.NgaySua = NgaySua;
         this.TrangThai = TrangThai;
     }
 
-    public MauSacView(String ma, Date NgayTao, Date NgaySua, int TrangThai) {
+    public MauSacView(String ma, String ten, Date NgayTao, Date NgaySua, int TrangThai) {
         this.ma = ma;
+        this.ten = ten;
         this.NgayTao = NgayTao;
         this.NgaySua = NgaySua;
         this.TrangThai = TrangThai;
@@ -51,6 +50,10 @@ public class MauSacView {
 
     public void setMa(String ma) {
         this.ma = ma;
+    }
+
+    public String getTen() {
+        return ten;
     }
 
     public Date getNgayTao() {
@@ -79,8 +82,7 @@ public class MauSacView {
 
     @Override
     public String toString() {
-        return "IMEIDomain{" + "id=" + id + ", ma=" + ma + ", NgayTao=" + NgayTao + ", NgaySua=" + NgaySua + ", TrangThai=" + TrangThai + '}';
+        return "MauSacView{" + "id=" + id + ", ma=" + ma + ", ten=" + ten + ", NgayTao=" + NgayTao + ", NgaySua=" + NgaySua + ", TrangThai=" + TrangThai + '}';
     }
 
-   
 }
